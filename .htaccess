@@ -1,0 +1,11 @@
+RewriteEngine on
+
+# Check for non-www or www host
+RewriteCond %{HTTP_HOST} ^hospital2house.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.hospital2house.com$
+
+# Avoid redirecting if already in the /dist/ folder
+RewriteCond %{REQUEST_URI} !^/dist/
+
+# Redirect all other requests to the /dist/ folder
+RewriteRule ^(.*)$ /dist/$1 [L]
