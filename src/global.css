@@ -1,0 +1,101 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+#root {
+	/* Root is the parent of our content & the child of body*/
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* gap: 1rem 0; */
+}
+
+body {
+	height: 100%;
+	background-color: white;
+}
+
+html,
+body {
+	/* Prevents horizontal scrolling */
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+p {
+	margin: 0.5rem 0;
+	color: #555555;
+}
+
+h1 {
+	margin: 2rem 0 2rem;
+	font-family: "PT Serif", "Times New Roman";
+	color: #0f1728;
+	text-align: center;
+	font-size: 2rem; /* declaring this is necessary since h1s behave differently when nested in section elements*/
+}
+
+h2 {
+	font-family: "PT Serif", "Times New Roman";
+	color: #0f1728;
+	font-size: 1.75em;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	max-width: 1200px;
+	width: 100%;
+}
+
+.doubleContainer {
+	/* for when we want 2 inputs side-by-side*/
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	justify-content: space-between;
+	align-items: center;
+	/* max-width: 1200px; */
+}
+
+.highlight {
+	font-weight: bold;
+	letter-spacing: 1px;
+	background-color: #172554;
+	padding-block: 3px;
+	padding-left: 6px;
+	padding-right: 6px;
+	border-radius: 6px;
+	margin-right: 6px;
+	color: white;
+}
+
+section:last-of-type {
+	margin-bottom: 5rem;
+}
+
+@media (max-width: 810px) {
+	/* vertical tablet / mobile */
+	.doubleContainer {
+		flex-direction: column;
+	}
+
+	section {
+		width: 100%;
+	}
+}
+
+hr {
+	margin-bottom: 0.5rem;
+	border-top: 1px solid #0f1728;
+	opacity: 0.25;
+}
+/* 
+a:visited {
+	color: #172554;
+} */

@@ -1,0 +1,51 @@
+.doubleContainer-footer {
+	/* for when we want 2 inputs side-by-side*/
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer {
+	background-color: #0f1728;
+	color: white;
+	margin-top: auto;
+	width: 100%;
+	padding: 2rem;
+}
+
+.copyright {
+	margin: 0;
+	color: white;
+}
+
+footer ul {
+	display: flex;
+	flex-direction: column;
+}
+
+footer ul li {
+	list-style: none; /* Removes bullet points */
+	text-align: right;
+}
+
+footer ul li a {
+	text-decoration: none; /* Removes underline */
+	color: white;
+}
+
+footer ul li a:hover {
+	text-decoration: underline; /* Removes underline */
+	color: white;
+}
+
+@media (max-width: 810px) {
+	footer ul li {
+		text-align: center;
+	}
+
+	.doubleContainer-footer {
+		flex-direction: column-reverse;
+	}
+}

@@ -1,0 +1,33 @@
+.infoRow {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	max-width: 1010px;
+	justify-content: space-between;
+	margin: 3rem auto;
+	gap: 1rem;
+}
+
+.infoStack {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.infoStack img {
+	height: 2.5rem;
+}
+
+.infoStack h2 {
+	text-align: center;
+}
+
+.infoStack p {
+	text-align: center;
+}
+
+@media screen and (max-width: 810px) {
+	.infoRow {
+		flex-direction: column;
+	}
+}

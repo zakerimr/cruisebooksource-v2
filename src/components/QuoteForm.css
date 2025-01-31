@@ -1,0 +1,71 @@
+.quoteForm {
+	display: flex;
+	flex-direction: column;
+	max-width: 800px;
+	width: 100%;
+	font-size: 16px;
+	padding: 1rem;
+	gap: 1rem;
+	margin-bottom: 5rem;
+}
+
+.quoteForm input,
+select,
+textarea {
+	font-size: inherit;
+	margin-top: 0.5rem;
+	padding: 0.5rem;
+	border: 2px solid #ddd;
+	border-radius: 6px;
+	background: transparent;
+	height: 3rem;
+	color: #505050;
+}
+
+.quoteForm button {
+	font-size: inherit;
+	border-radius: 6px;
+	padding: 1rem;
+	background-color: #172554;
+	color: white;
+	border-style: none;
+	font-weight: bold;
+}
+
+.quoteForm button:hover {
+	background-color: #0f1728;
+	cursor: pointer;
+}
+
+.quoteForm label {
+	/* margin-top: 1rem; */
+	color: #505050;
+}
+
+.quoteForm option {
+	color: #bdbdbd;
+}
+
+select {
+	width: 100%;
+}
+
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+	opacity: 1;
+	color: #bdbdbd;
+}
+
+.quoteForm textarea {
+	resize: none;
+	height: 5rem;
+}
+
+.combo {
+	/* label and input */
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	width: 100%;
+}

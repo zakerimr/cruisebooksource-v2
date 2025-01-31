@@ -1,0 +1,101 @@
+.flexContainer {
+	width: 100%;
+	display: flex;
+	/* align-items: center; */
+	/* justify-content: center; */
+	gap: 2rem;
+	max-width: 1010px;
+	margin: 0 auto;
+	/* image-rendering: -webkit-optimize-contrast; */
+}
+
+.flexContainer img {
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 6px;
+}
+
+.flexContainer figcaption {
+	width: 100%;
+	color: #505050;
+}
+
+.photoForm {
+	display: block;
+	width: 100%;
+	align-tracks: flex-start;
+	position: relative;
+}
+
+.combo {
+	/* label and input */
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+	width: 100%;
+}
+
+.photoForm input,
+textarea {
+	font-size: inherit;
+	margin-top: 0.5rem;
+	padding: 0.5rem;
+	border: 2px solid #ddd;
+	border-radius: 6px;
+	background: transparent;
+	height: 3rem;
+	color: #505050;
+}
+
+@media screen and (max-width: 810px) {
+	.flexContainer {
+		flex-direction: column;
+		gap: 0;
+	}
+	.flexContainer img {
+		display: none;
+	}
+	.flexContainer figCaption {
+		display: none;
+	}
+}
+
+.photoForm textarea {
+	resize: none;
+	min-height: 5rem;
+}
+
+.photoForm label {
+	/* margin-top: 1rem; */
+	color: #505050;
+}
+
+.flexContainer .combo:last-of-type {
+	margin-bottom: 0;
+}
+
+.mask {
+	width: 100%;
+	position: relative;
+	background-color: black;
+	height: 20px;
+	color: white;
+}
+
+.photoForm button {
+	margin-top: 1rem;
+	font-size: inherit;
+	padding: 1rem;
+	border-radius: 6px;
+	background-color: #172554;
+	color: white;
+	border-style: none;
+	font-weight: bold;
+	width: 100%;
+}
+
+.photoForm button:hover {
+	background-color: #0f1728;
+	cursor: pointer;
+}
