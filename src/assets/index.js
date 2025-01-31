@@ -1,36 +1,3 @@
-// export const sample1 = require("./samplebooks/ash.webp");
-// export const sample2 = require("./samplebooks/clb11-front.webp");
-// export const sample3 = require("./samplebooks/20.webp");
-// export const sample4 = require("./samplebooks/oak.webp");
-
-// export const bam_c = require("./certs/bam/BAM_Contemporary.jpg");
-// export const bam_t = require("./certs/bam/BAM_Traditional.jpg");
-
-// export const nose_c = require("./certs/bluenose/Contemporary_Bluenose_Sample.jpg");
-// export const nose_t = require("./certs/bluenose/Traditional_bluenose_Sample copy.jpg");
-// export const nose_v2 = require("./certs/bluenose/Bluenose_V2.jpg");
-
-// export const aroundtheworld = require("./certs/other/Around the World Certificate.jpg");
-// export const goldendragon = require("./certs/other/Golden Dragon.jpg");
-// export const hormuz = require("./certs/other/Hormuz.jpg");
-
-// export const ditch = require("./certs/other/Order of the Ditch Certificate.jpg");
-// export const persian = require("./certs/other/Persian_Excursion.jpg");
-// export const spanish = require("./certs/other/SpanishMain_Traditional.jpg");
-// export const magellan = require("./certs/other/Strait of Magellan Certificate.jpg");
-
-// export const rock_c = require("./certs/rock/Contemporary Order of Rock Sample.jpg");
-// export const rock_t = require("./certs/rock/Rock Traditional Sample.jpg");
-
-// export const shell_e = require("./certs/shellback/Emerald Shellback_Sample.jpg");
-// export const shell_g = require("./certs/shellback/GoldenShellback_Traditonal.jpg");
-// export const shell_c = require("./certs/shellback/Shellback_Contemporary.jpg");
-// export const shell_t = require("./certs/shellback/Shellback_Traditional.jpg");
-
-// export const suez_c = require("./certs/suez/Suez_Contemporary.jpg");
-// export const suez_t = require("./certs/suez/Suez_Traditional.JPG");
-// export const suez_v2 = require("./certs/suez/Suez_TraditionalV2.jpg");
-
 import sample1 from "./samplebooks/ash.webp";
 import sample2 from "./samplebooks/clb11-front.webp";
 import sample3 from "./samplebooks/20.webp";
