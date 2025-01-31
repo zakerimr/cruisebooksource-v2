@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Gallery.css";
 
+import * as certs from "../assets/index.js";
+
 const Gallery = () => {
 	const [lightbox, setLightbox] = useState({
 		open: false,
@@ -38,44 +40,24 @@ const Gallery = () => {
 			<hr></hr>
 
 			<div className="row">
-				<span
-					onClick={() =>
-						handleClick(
-							"/certs/bluenose/Traditional_Bluenose_Sample copy.jpg",
-							"Bluenose Traditional"
-						)
-					}
-				>
-					<img
-						src="/certs/bluenose/Traditional_Bluenose_Sample copy.jpg"
-						alt="Bluenose Traditional"
-					/>
+				<span onClick={() => handleClick(certs.nose_t, "Bluenose Traditional")}>
+					<img src={certs.nose_t} alt="Bluenose Traditional" />
 					<div className="overlay">
 						<p>Bluenose Traditional</p>
 					</div>
 				</span>
 				<span
-					onClick={() =>
-						handleClick(
-							"/certs/bluenose/Contemporary_Bluenose_Sample.jpg",
-							"Bluenose Contemporary"
-						)
-					}
+					onClick={() => handleClick(certs.nose_c, "Bluenose Contemporary")}
 				>
-					<img src="/certs/bluenose/Contemporary_Bluenose_Sample.jpg"></img>
+					<img src={certs.nose_c}></img>
 					<div className="overlay">
 						<p>Bluenose Contemporary</p>
 					</div>
 				</span>
 				<span
-					onClick={() =>
-						handleClick(
-							"/certs/bluenose/Bluenose_V2.jpg",
-							"Bluenose Contemporary V2"
-						)
-					}
+					onClick={() => handleClick(certs.nose_v2, "Bluenose Contemporary V2")}
 				>
-					<img src="/certs/bluenose/Bluenose_V2.jpg"></img>
+					<img src={certs.nose_v2}></img>
 					<div className="overlay">
 						<p>Bluenose Contemporary V2</p>
 					</div>
@@ -85,22 +67,14 @@ const Gallery = () => {
 			<h2>Bab-al-Mandeb</h2>
 			<hr></hr>
 			<div className="row">
-				<span
-					onClick={() =>
-						handleClick("/certs/bam/BAM_Traditional.jpg", "BAM Traditional")
-					}
-				>
-					<img src="/certs/bam/BAM_Traditional.jpg"></img>
+				<span onClick={() => handleClick(certs.bam_t, "BAM Traditional")}>
+					<img src={certs.bam_t}></img>
 					<div className="overlay">
 						<p>BAM Traditional</p>
 					</div>
 				</span>
-				<span
-					onClick={() =>
-						handleClick("/certs/bam/BAM_Contemporary.jpg", "BAM Contemporary")
-					}
-				>
-					<img src="/certs/bam/BAM_Contemporary.jpg"></img>
+				<span onClick={() => handleClick(certs.bam_c, "BAM Contemporary")}>
+					<img src={certs.bam_c}></img>
 					<div className="overlay">
 						<p>BAM Contemporary</p>
 					</div>
@@ -112,26 +86,20 @@ const Gallery = () => {
 			<div className="row">
 				<span
 					onClick={() =>
-						handleClick(
-							"/certs/rock/Rock Traditional Sample.jpg",
-							"Order of the Rock Traditional"
-						)
+						handleClick(certs.rock_t, "Order of the Rock Traditional")
 					}
 				>
-					<img src="/certs/rock/Rock Traditional Sample.jpg"></img>
+					<img src={certs.rock_t}></img>
 					<div className="overlay">
 						<p>Order of the Rock Traditional</p>
 					</div>
 				</span>
 				<span
 					onClick={() =>
-						handleClick(
-							"/certs/rock/Contemporary Order of Rock Sample.jpg",
-							"Order of the Rock Contemporary"
-						)
+						handleClick(certs.rock_c, "Order of the Rock Contemporary")
 					}
 				>
-					<img src="/certs/rock/Contemporary Order of Rock Sample.jpg"></img>
+					<img src={certs.rock_c}></img>
 					<div className="overlay">
 						<p>Order of the Rock Contemporary</p>
 					</div>
@@ -142,53 +110,29 @@ const Gallery = () => {
 			<hr></hr>
 			<div className="row">
 				<span
-					onClick={() =>
-						handleClick(
-							"/certs/shellback/Shellback_Traditional.jpg",
-							"Shellback Traditional"
-						)
-					}
+					onClick={() => handleClick(certs.shell_t, "Shellback Traditional")}
 				>
-					<img src="/certs/shellback/Shellback_Traditional.jpg"></img>
+					<img src={certs.shell_t}></img>
 					<div className="overlay">
 						<p>Shellback Traditional</p>
 					</div>
 				</span>
 				<span
-					onClick={() =>
-						handleClick(
-							"/certs/shellback/Shellback_Contemporary.jpg",
-							"Shellback Contemporary"
-						)
-					}
+					onClick={() => handleClick(certs.shell_c, "Shellback Contemporary")}
 				>
-					<img src="/certs/shellback/Shellback_Contemporary.jpg"></img>
+					<img src={certs.shell_c}></img>
 					<div className="overlay">
 						<p>Shellback Contemporary</p>
 					</div>
 				</span>
-				<span
-					onClick={() =>
-						handleClick(
-							"/certs/shellback/Emerald Shellback_Sample.jpg",
-							"Emerald Shellback"
-						)
-					}
-				>
-					<img src="/certs/shellback/Emerald Shellback_Sample.jpg"></img>
+				<span onClick={() => handleClick(certs.shell_e, "Emerald Shellback")}>
+					<img src={certs.shell_e}></img>
 					<div className="overlay">
 						<p>Emerald Shellback</p>
 					</div>
 				</span>
-				<span
-					onClick={() =>
-						handleClick(
-							"/certs/shellback/GoldenShellback_Traditonal.jpg",
-							"Golden Shellback"
-						)
-					}
-				>
-					<img src="/certs/shellback/GoldenShellback_Traditonal.jpg"></img>
+				<span onClick={() => handleClick(certs.shell_g, "Golden Shellback")}>
+					<img src={certs.shell_g}></img>
 					<div className="overlay">
 						<p>Golden Shellback</p>
 					</div>
@@ -199,27 +143,17 @@ const Gallery = () => {
 			<hr></hr>
 			<div className="row">
 				<span
-					onClick={() =>
-						handleClick(
-							"/certs/suez/Suez_TraditionalV2.jpg",
-							"Suez Transit Traditional"
-						)
-					}
+					onClick={() => handleClick(certs.suez_t, "Suez Transit Traditional")}
 				>
-					<img src="/certs/suez/Suez_TraditionalV2.jpg"></img>
+					<img src={certs.suez_t}></img>
 					<div className="overlay">
 						<p>Suez Transit Traditional</p>
 					</div>
 				</span>
 				<span
-					onClick={() =>
-						handleClick(
-							"/certs/suez/Suez_Contemporary.jpg",
-							"Suez Transit Contemporary"
-						)
-					}
+					onClick={() => handleClick(certs.suez_c, "Suez Transit Contemporary")}
 				>
-					<img src="/certs/suez/Suez_Contemporary.jpg"></img>
+					<img src={certs.suez_c}></img>
 					<div className="overlay">
 						<p>Suez Transit Contemporary</p>
 					</div>

@@ -4,12 +4,13 @@ import Footer from "../components/Footer";
 import Strip from "../components/Strip";
 import { Link } from "react-router-dom";
 
+import { sample1, sample2, sample3, sample4 } from "../assets";
+
+import "../global.css";
 import "../components/Cruisebooks.css";
 
 const covers = require.context("../../public/covers", false);
 const endsheets = require.context("../../public/endsheets", false);
-
-import "../global.css";
 
 const Cruisebooks = () => {
 	const coverList = covers.keys().map((image) => covers(image));
@@ -71,7 +72,7 @@ const Cruisebooks = () => {
 							className="quarter"
 							to="https://indd.adobe.com/view/751b963d-c573-48aa-aae3-71444fff5e47"
 						>
-							<img src="/samplebooks/ash.jpg"></img>
+							<img src="/samplebooks/ash.webp"></img>
 							<p>USS Ashland (LSD 48) 2018-2019 Deployment</p>
 						</Link>
 					</div>
@@ -80,14 +81,14 @@ const Cruisebooks = () => {
 							className="quarter"
 							to="https://indd.adobe.com/view/5cb23f71-22d7-4fd5-9a25-ae96b59df89e"
 						>
-							<img src="/samplebooks/oak.jpg"></img>
+							<img src="/samplebooks/oak.webp"></img>
 							<p>USS Oak Hill (LSD 51) 2018 Deployment</p>
 						</Link>
 						<Link
 							className="quarter"
 							to="https://indd.adobe.com/view/bf9fc042-d177-46fb-9a5d-58efe00e2c91"
 						>
-							<img src="/samplebooks/clb11-front.jpg"></img>
+							<img src="/samplebooks/clb11-front.webp"></img>
 							<p>Combat Logistics Battalion 11 2020-2021 Deployment</p>
 						</Link>
 					</div>
